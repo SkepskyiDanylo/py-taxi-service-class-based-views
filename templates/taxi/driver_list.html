@@ -2,7 +2,7 @@
 {% block content %}
   <h1>Drivers list:</h1>
   {% if driver_list %}
-    <ul class=>
+    <ul>
       {% for driver in driver_list %}
         <li><a href="{% url 'taxi:driver-detail' driver.pk %}">{{ driver.first_name }} {{ driver.last_name }}</a></li>
       {% endfor %}
